@@ -5,14 +5,16 @@ public class Booklist{
   private ArrayList<Book> books=new ArrayList<Book>();
   public Booklist(Scanner scanner){
     String input="";
-    System.out.println("Hello, which books are available in the library right now? If there is no more books, type 'done'.");
+    
     while(true){
+      System.out.println("Which books are available in the library right now? If there is no more books, type 'done'.");
+      System.out.println("What is the title of the book?");
       input=scanner.nextLine();
+      String title=input;
       if (input.equals("done")){
         break;
       }
-      System.out.println("What is the title of the book?");
-      String title=input;
+      
       System.out.println("What is the author of the book?");
       input=scanner.nextLine();
       String writer=input;
@@ -23,6 +25,7 @@ public class Booklist{
       input=scanner.nextLine();
       int verNum=Integer.parseInt(input);
       books.add(new Book(title, writer, price,verNum));
+      System.out.println("The book has been added to the library.");
     }
     
   }

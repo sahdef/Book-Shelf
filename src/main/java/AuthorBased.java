@@ -4,9 +4,7 @@ import java.util.Scanner;
 
 public class AuthorBased{
   public AuthorBased(ArrayList<Book> books, Scanner scanner){
-    System.out.println("Hello, what is your name?");
-    String input=scanner.nextLine();
-    System.out.println("Hello "+input+"! Which author's books do you want to look for?");
+    System.out.println("Hello! Which author's books do you want to look for?");
     String author=scanner.nextLine();
     int count=0;
     for(int i=0; i<books.size(); i++){
