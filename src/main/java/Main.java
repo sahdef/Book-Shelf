@@ -31,6 +31,7 @@ public class Main {
       if (input==6){
         break;
       }
+      scanner.close();
       System.out.println("Thanks for choosing our library.");    
     }
     
