@@ -21,7 +21,7 @@ public class DifferentVersions{
         }
       }
     }
-    System.out.println("We have" +versionNumbers.size()+ "different versions of that book.");
+    System.out.println("We have " +versionNumbers.size()+ " different versions of that book.");
     System.out.println("Here are the positions of the books and their versions:");
     for (int i=0; i<posList.size(); i++){
       System.out.println("The book's position is "+posList.get(i)+" and the version number is "+books.get(posList.get(i)-1).getVersion());

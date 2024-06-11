@@ -11,7 +11,7 @@ public class BookSearch{
       if (input.equals(books.get(i).getTitle())){
         System.out.println("We have that book! It's position number in the list is "+(i+1));
         count++;
-        System.out.println("The book's author is "+books.get(i).getAuthor()+ "It costs" +books.get(i).getPrice()+ "and it's version number is "+ books.get(i).getVersion());
+        System.out.println("The book's author is "+books.get(i).getAuthor()+ " It costs " +books.get(i).getPrice()+ " and it's version number is "+ books.get(i).getVersion());
       }
     }
     if (count==0){
